@@ -9,8 +9,8 @@ mkdir code
 Docker maps your projects by creating a volume upon `code` directory.
 
 ### Setup Info
-1. Image: [php:7.1-apache-stretch](https://hub.docker.com/layers/library/php/7.1-apache-stretch/images/sha256-d6ce146ca4d868023314a29f799fbfabbdb483c1db598ed5c935b047c830da7a?context=explore)
-2. Available apps: [`composer`, `vim`, `git`]
+1. Image: [php:7.1.33-apache-stretch](https://hub.docker.com/layers/library/php/7.1.33-apache-stretch/images/sha256-5b115edaef4ab6737cb69dcba5ad2f137db39501a6b76726902946b0fec6d4aa?context=explore)
+2. Available apps: `composer` v2.2, `vim`, `git`
 3. You can edit Apache's default vhost in `docker/apache/000-default.conf`.
 4. You can edit `php.ini` in `Dockerfile`.
 5. Please replace my Github info with yours in `Dockerfile`.

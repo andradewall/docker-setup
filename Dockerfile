@@ -1,9 +1,10 @@
-FROM php:7.1-apache-stretch as dev
+FROM php:7.1.33-apache-stretch
 
 ENV APP_ENV=dev
 ENV APP_DEBUG=true
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
+RUN echo 'deb http://archive.debian.org/debian/ stretch main non-free contrib\ndeb-src http://archive.debian.org/debian/ stretch main non-free contrib\ndeb http://archive.debian.org/debian-security/ stretch/updates main non-free contrib\ndeb-src http://archive.debian.org/debian-security/ stretch/updates main non-free contrib' > /etc/apt/sources.list
 RUN apt-get update && apt-get install -y zip libpng-dev libzip-dev git vim
 RUN docker-php-ext-install pdo pdo_mysql gd zip
 RUN git config --global user.email "andradewall0@gmail.com"
