@@ -1,4 +1,4 @@
-FROM php:7.1.33-apache-stretch
+FROM php:7.3-apache-stretch
 
 ENV APP_ENV=dev
 ENV APP_DEBUG=true

@@ -1,5 +1,5 @@
-# Docker Setup for PHP 7.1
-Docker setup for development with PHP 7.1 runnig under `:8071` port.
+# Docker Setup for PHP 7.3
+Docker setup for development with PHP 7.3 runnig under `:8073` port.
 
 ### Post Clone
 You MUST create the directory `code` where you'll maintain your projects.
@@ -9,7 +9,7 @@ mkdir code
 Docker maps your projects by creating a volume upon `code` directory.
 
 ### Setup Info
-1. Image: [php:7.1.33-apache-stretch](https://hub.docker.com/layers/library/php/7.1.33-apache-stretch/images/sha256-5b115edaef4ab6737cb69dcba5ad2f137db39501a6b76726902946b0fec6d4aa?context=explore)
+1. Image: [php:7.3-apache-stretch](https://hub.docker.com/layers/library/php/7.3-apache-stretch/images/sha256-78605f6e1e833d5bf397bc8fb249becf9d86469477d3679124fd2134749b6761?context=explore)
 2. Available apps: `composer` v2.2, `vim`, `git`
 3. You can edit Apache's default vhost in `docker/apache/000-default.conf`.
 4. You can edit `php.ini` in `Dockerfile`.
