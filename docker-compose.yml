@@ -6,11 +6,11 @@ services:
     volumes:
       - ./code:/var/www/html
     ports:
-      - "8071:80"
+      - "8082:80"
     environment:
       - APP_ENV=local
       - APP_DEBUG=true
-    container_name: php-71
+    container_name: php-82
     networks:
       - laravel
 networks:
